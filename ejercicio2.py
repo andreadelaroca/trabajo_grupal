@@ -14,3 +14,15 @@ print ("**Bienvenidos a la UAM**")
 LABORATORIOS = ["Laboratorio 1", "Laboratorio 2"] #Cantidad de Laboratorios
 FILAS = 5
 COLUMNAS = 4
+# Función para crear los estados de las computadoras (ocupada o libre)
+def crear_estado():
+    estado = []
+    for i in range(FILAS):
+        fila = [] 
+        for j in range(COLUMNAS):
+            ocupada = random.choice([True, False]) # Simular ocupación aleatoria
+            fila.append(ocupada) 
+        estado.append(fila)
+    return estado
+
+# Función para mostrar el estado de las computadoras
