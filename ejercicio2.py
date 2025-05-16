@@ -57,9 +57,7 @@ def main():
     print("\nResumen de computadoras:")
     print(f"Total de computadoras en {LABORATORIOS[0]}: {FILAS * COLUMNAS}") #Laboratorio 1
     print(f"Total de computadoras en {LABORATORIOS[1]}: {FILAS * COLUMNAS}") #Laboratorio 2
-    print ("") #Este es un espacio para dejarlo mas ordenado
     print ("*" * 50)
-    print ("") #Este es un espacio para dejarlo mas ordenado
     print(f"--Resumen de {LABORATORIOS[0]}: {ocupadas1} ocupadas, {libres1} libres") #Resumen de computadoras
     print(f"--Resumen de {LABORATORIOS[1]}: {ocupadas2} ocupadas, {libres2} libres") 
 
