@@ -45,3 +45,24 @@ def contar_computadoras(estado):
                 ocupadas += 1 
     libres = FILAS * COLUMNAS - ocupadas
     return ocupadas, libres
+# Programa principal
+def main():
+    estado1 = crear_estado() #Crear el estado de las computadoras
+    estado2 = crear_estado() 
+    mostrar_estado(estado1, LABORATORIOS[0]) #Mostrar el estado de las computadoras
+    mostrar_estado(estado2, LABORATORIOS[1])
+    ocupadas1, libres1 = contar_computadoras(estado1)# Contar cuántas están ocupadas y cuántas libres
+    ocupadas2, libres2 = contar_computadoras(estado2)
+# Resumen general del trabajo
+    print("\nResumen de computadoras:")
+    print(f"Total de computadoras en {LABORATORIOS[0]}: {FILAS * COLUMNAS}") #Laboratorio 1
+    print(f"Total de computadoras en {LABORATORIOS[1]}: {FILAS * COLUMNAS}") #Laboratorio 2
+    print ("")
+    print ("*" * 50)
+    print ("")
+    print(f"--Resumen de {LABORATORIOS[0]}: {ocupadas1} ocupadas, {libres1} libres") #Resumen de computadoras
+    print(f"--Resumen de {LABORATORIOS[1]}: {ocupadas2} ocupadas, {libres2} libres") 
+
+    # Ejecutar el programa
+    
+main()
