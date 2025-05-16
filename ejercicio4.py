@@ -9,10 +9,13 @@ consumo_total = 0 # variable para almacenar el consumo total de kW
 consumo_semanal = 0 # variable para almacenar el consumo semanal de kW
 consumo_diario = 0 # variable para almacenar el consumo diario de kW
 consumo_turno = 0 # variable para almacenar el consumo por turno
+turnos = ["Mañana", "Tarde", "Noche"] # lista de turnos
 
 print("Monitoreo del consumo energético de cuatro edificios en UAM a lo largo de una semana")
 
-
+#bucle para cada edificio
+for edificio in range(1,6):
+    print(f"\nEdificio No.{edificio}") #imprime el edificio que se está procesando
     
     
     
