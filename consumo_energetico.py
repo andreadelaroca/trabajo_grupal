@@ -3,6 +3,8 @@ num_edificios = 4
 dias_semana = 7
 turnos_dia = 3
 
+consumo_total = [0] * num_edificios
+
 for edificio in range(num_edificios):
     print(f"\nedificio {edificio + 1}:") #Inicio del bucle
     for dia in range(dias_semana):
@@ -14,6 +16,10 @@ for edificio in range(num_edificios):
                     break
                 except ValueError:
                     print(" Error, ingrese un numero valido")
-            consumo_total[efificio] += consumo  # Bucle de los 3 trunos del dias
+            consumo_total[edificio] += consumo  # Bucle de los 3 trunos del dias
 
-print()
+print("\nresumen del consumo semanal por edificio:")
+for i in range(num_edificios):
+    total = consumo_total[i]
+    promedio = total / dias_semana
+    print(f"edificio {i + 1} - total: {total:.2f} KMH, promedio diario: {promedio:.2f} KMH") # Mostrar el resultado
