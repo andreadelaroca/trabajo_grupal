@@ -1,3 +1,10 @@
+# Monitoreo del consumo energético
+
+##Desarrolle un programa que registre el consumo energético de cuatro edificios del campus 
+##universitario a lo largo de una semana. Por cada día se ingresarán los kilovatios consumidos en 
+##tres turnos: mañana, tarde y noche. El programa debe calcular el consumo total por edificio y 
+##generar el promedio semanal correspondiente
+ 
 # Defini las constantes
 num_edificios = 4
 dias_semana = 7
