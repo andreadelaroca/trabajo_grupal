@@ -1,0 +1,18 @@
+# monitoreo del consumo energético
+# registrar el consumo energético de cuatro edificios del campus a lo largo de una semana.
+# por cada día se ingresarán los kilovatios (kW) consumidos en tres turnos: mañana, 
+# tarde y noche. 
+# el programa debe calcular el consumo total por edificio y el promedio semanal.
+
+# definición de variables iniciales
+consumo_total = 0 # variable para almacenar el consumo total de kW
+consumo_semanal = 0 # variable para almacenar el consumo semanal de kW
+consumo_diario = 0 # variable para almacenar el consumo diario de kW
+consumo_turno = 0 # variable para almacenar el consumo por turno
+
+print("Monitoreo del consumo energético de cuatro edificios en UAM a lo largo de una semana")
+
+
+    
+    
+    
