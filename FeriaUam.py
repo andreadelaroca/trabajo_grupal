@@ -50,3 +50,17 @@ print("\n===Resumen de ventas por stand y dias ===")
 #se inicializa una variable para acumular el total de la feria
 total_general = 0
 
+#Se hace una esrtructura de bucles anidados para recorrer la lista de ventas
+for dia in range(dias):
+    total_dia = 0 #se inicializa el total del dia en 0
+    print(f" {dia + 1}:")
+
+    for stand in range(dias):
+        #se suma las ventas de cada stand
+        total_stand = sum(ventas[dia][stand])
+
+        print(f"  Stand {stand + 1}: C${total_stand:.2f}")
+
+        tota_dia += total_stand #se suma el total del stand al total del dia
+
+        print(f" Total general de la feria: C${total_general:.2f}")
