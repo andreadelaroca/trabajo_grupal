@@ -5,7 +5,6 @@
 
 # definición de variables iniciales
 consumo_total = 0 # variable para almacenar el consumo total de kW
-consumo_semanal = 0 # variable para almacenar el consumo semanal de kW
 consumo_diario = 0 # variable para almacenar el consumo diario de kW
 consumo_turno = 0 # variable para almacenar el consumo por turno
 dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"] # lista de días
@@ -18,13 +17,15 @@ for edificio in range(1,6):
     print(f"\nEdificio No. {edificio}") # imprime el edificio que se está procesando
     # bucle para cada día de la semana
     for dia in dias:
-        print(f"Día {dia}") # imprime el día que se está procesando
+        print(f"\nDía {dia}") # imprime el día que se está procesando
         # bucle para cada turno
         for turno in turnos:
-            print(f"Turno de {turno}") # imprime el turno que se está procesando
+            print(f"\nTurno de {turno}") # imprime el turno que se está procesando
             consumo_turno = float(input(f"Ingrese el consumo en kW: "))
             if consumo_turno < 0: # validación del consumo
                 # si el consumo es negativo, se solicita nuevamente
                 print("El consumo no puede ser negativo. Intente nuevamente.")
                 consumo_turno = float(input(f"Ingrese el consumo en kW: "))
             consumo_diario += consumo_turno
+            print(f"El consumo en el turno de {turno} fue de {consumo_turno} kW") # imprime el consumo por turno
+        print(f"\nConsumo total del día {dia}: {consumo_diario} kW")
