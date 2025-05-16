@@ -36,3 +36,12 @@ def mostrar_estado(estado, nombre_laboratorio):
             else:
                 print("O", end=" ")  # Libre
         print()
+# Función para contar cuántas están ocupadas y cuántas libres
+def contar_computadoras(estado):
+    ocupadas = 0
+    for fila in estado:
+        for computadora in fila:
+            if computadora:
+                ocupadas += 1 
+    libres = FILAS * COLUMNAS - ocupadas
+    return ocupadas, libres
