@@ -24,5 +24,15 @@ def crear_estado():
             fila.append(ocupada) 
         estado.append(fila)
     return estado
-
 # Función para mostrar el estado de las computadoras
+print ("X = Ocupada")
+print ("O = Libre")
+def mostrar_estado(estado, nombre_laboratorio):
+    print(f"\nEstado de {nombre_laboratorio}:")
+    for fila in estado:
+        for computadora in fila:
+            if computadora:
+                print("X", end=" ")  # Ocupada
+            else:
+                print("O", end=" ")  # Libre
+        print()
