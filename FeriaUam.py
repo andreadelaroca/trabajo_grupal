@@ -27,7 +27,7 @@ for dia in range(dias):
                 try: #este comando se usa con el excepto value para cuando el usuario ingrese un valor no valido, el progama le vuelve a tirar el mensaje sin salir 
                     
                     #ahora le pedimos al usuario que ingrese el monto de venta
-                    monto = float(input(f"Ingrese el monto de venta para el Producto {producto + 1}: C$"))
+                    monto = float(input(f"Ingrese el monto de venta para el Producto {producto + 1}: C$ "))
 
                     #validamos que el monto no sea negativo
                     if monto < 0:
@@ -55,12 +55,12 @@ for dia in range(dias):
     total_dia = 0 #se inicializa el total del dia en 0
     print(f" {dia + 1}:")
 
-    for stand in range(dias):
+    for stand in range(stands_dias):
         #se suma las ventas de cada stand
         total_stand = sum(ventas[dia][stand])
-
-        print(f"  Stand {stand + 1}: C${total_stand:.2f}")
-
-        tota_dia += total_stand #se suma el total del stand al total del dia
-
-        print(f" Total general de la feria: C${total_general:.2f}")
+        print(f"Stand {stand + 1}: C${total_stand:.2f}")
+        total_dia += total_stand #se suma el total del stand al total del dia
+    print(f"Total del dia {dia + 1}: C${total_dia:.2f}")
+    total_general += total_dia 
+    
+print(f"Total general de la feria: C${total_general:.2f}")
