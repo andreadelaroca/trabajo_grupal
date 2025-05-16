@@ -46,5 +46,7 @@ for dia in range(dias):
             
 #Se procede a mostrar el resumen de las ventas de cada stand por dia
 print("\n===Resumen de ventas por stand y dias ===")
-for dia in range(dias):
-    print(f)
+
+#se inicializa una variable para acumular el total de la feria
+total_general = 0
+
