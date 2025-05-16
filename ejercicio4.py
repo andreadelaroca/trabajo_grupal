@@ -1,7 +1,7 @@
 # monitoreo del consumo energético
-# registrar el consumo energético de cuatro edificios del campus a lo largo de una semana.
-# por cada día se ingresarán los kilovatios (kW) consumidos en tres turnos.
-# calcular el consumo total por edificio y el promedio semanal.
+# registrar el consumo energético de cuatro edificios del campus a lo largo de una semana
+# por cada día se ingresarán los kilovatios (kW) consumidos en tres turnos
+# calcular el consumo total por edificio y el promedio semanal
 
 import os
 import time
