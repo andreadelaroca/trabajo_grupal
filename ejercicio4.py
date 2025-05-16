@@ -18,5 +18,13 @@ for edificio in range(1,6):
     print(f"\nEdificio No. {edificio}") # imprime el edificio que se está procesando
     # bucle para cada día de la semana
     for dia in dias:
-        print(f"Día {dia}")
-        
+        print(f"Día {dia}") # imprime el día que se está procesando
+        # bucle para cada turno
+        for turno in turnos:
+            print(f"Turno de {turno}") # imprime el turno que se está procesando
+            consumo_turno = float(input(f"Ingrese el consumo en kW: "))
+            if consumo_turno < 0: # validación del consumo
+                # si el consumo es negativo, se solicita nuevamente
+                print("El consumo no puede ser negativo. Intente nuevamente.")
+                consumo_turno = float(input(f"Ingrese el consumo en kW: "))
+            consumo_diario += consumo_turno
