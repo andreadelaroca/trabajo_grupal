@@ -32,9 +32,9 @@ def mostrar_estado(estado, nombre_laboratorio):
     for fila in estado:
         for computadora in fila:
             if computadora:
-                print("X", end=" ")  # Ocupada
+                print("X", end=" ")  # end = "" se trata para dejarlo en una sola linea
             else:
-                print("O", end=" ")  # Libre
+                print("O", end=" ")  #  end = "" se trata para dejarlo en una sola linea
         print()
 # Función para contar cuántas están ocupadas y cuántas libres
 def contar_computadoras(estado):
@@ -57,9 +57,9 @@ def main():
     print("\nResumen de computadoras:")
     print(f"Total de computadoras en {LABORATORIOS[0]}: {FILAS * COLUMNAS}") #Laboratorio 1
     print(f"Total de computadoras en {LABORATORIOS[1]}: {FILAS * COLUMNAS}") #Laboratorio 2
-    print ("")
+    print ("") #Este es un espacio para dejarlo mas ordenado
     print ("*" * 50)
-    print ("")
+    print ("") #Este es un espacio para dejarlo mas ordenado
     print(f"--Resumen de {LABORATORIOS[0]}: {ocupadas1} ocupadas, {libres1} libres") #Resumen de computadoras
     print(f"--Resumen de {LABORATORIOS[1]}: {ocupadas2} ocupadas, {libres2} libres") 
 
